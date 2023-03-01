@@ -7,14 +7,15 @@
     <meta name="keywords" content="Contact Us">
     <meta name="description" content="">
 
-    <title>Women Apparels</title>
+    <title>Men1 Apparels</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/women.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/men.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
 
     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}" defer="">
     </script>
+
     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/nicepage.js')}}" defer="">
     </script>
 
@@ -31,6 +32,7 @@
             "logo": "images/default-logo.png"
         }
     </script>
+
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -203,8 +205,10 @@
                                         <span class="sr-only">+Next</span>
                                     </a>
                                 </div>
+
                             </div>
                         </div>
+
 
                         <div
                             class="u-container-style u-layout-cell u-right-cell u-size-31-lg u-size-31-md u-size-31-sm u-size-31-xs u-size-33-xl u-layout-cell-2">
@@ -221,56 +225,45 @@
                                             </div>
                                             {% endif %}
                                         </div>
-                                        <form action="http://127.0.0.1:5000/uploadwomen" method="post"
+                                        <form action="http://127.0.0.1:5000/upload" method="post" autocomplete="off"
                                             class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form"
                                             style="padding: 10px" enctype="multipart/form-data" name="form">
                                             <div class="u-form-address u-form-group u-form-group-3">
                                                 <label for="file-ip-1"
                                                     class="u-label u-text-body-alt-color u-label-3">Upload Image</label>
-                                                <input type="file" id="file-ip-1" name="file2"
+                                                <input type="file" id="file-ip-1" name="file1"
                                                     class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle"
                                                     autocomplete="off" onchange="showPreview(event);" required="">
                                                 <script src="{{ url_for('static', filename='js/form.js')}}"></script>
                                             </div>
                                             <hr>
-                                            {% for file2 in files %}
+                                            {% for file1 in files %}
                                             <img src="{{ url_for('upload', filename=file) }}" style="width: 64px"
                                                 alt="">
                                             {% endfor %}
                                     </div>
 
-                                    <!--
-                                    <div class="u-align-left u-form-group u-form-submit">
-                                        <a href="#"
-                                            class="u-active-white u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-palette-3-base u-radius-50 u-btn-7">Submit</a>
-                                        <input type="submit" value="submit" class="u-form-control-hidden">
-                                    </div>
-                                    -->
-
                                     <div class="form-group">
-                                        <button type="submit" class="buttonstyle">Submit</button>
+                                        <button type="submit" class="buttonstyle"
+                                            onclick="openPopup();">Submit</button>
                                     </div>
                                     <br>
 
-                                    <div class="u-align-left u-form-group u-form-submit">
-                                        <a href="/guidelines"
-                                            class="u-active-white u-border-none u-btn u-btn-round u-btn-submit
-                                                u-button-style u-hover-white u-palette-3-base u-radius-50 u-btn-7">Refer the
-                                            Guidelines Page</a>
-                                        <input type="submit" value="guidelinespage" class="u-form-control-hidden">
+                                    <div class="u-align-center u-form-group u-form-submit">
+                                        <a href="/guidelines">Refer the Guidelines Page</a>
+                                        <!-- <input type="submit" value="guidelinespage" class="u-form-control-hidden"
+                                            onclick="hrefFunction()"> -->
                                     </div>
                                     </form>
 
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!--
     <section class="u-align-center u-clearfix u-section-2" id="sec-0dcf">
         <div class="u-clearfix u-sheet u-sheet-1"></div>
@@ -397,8 +390,10 @@
             }
         </style>
     </section>
+    <section class="u-clearfix u-section-3" id="sec-226c">
+        <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
     -->
-
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7ba5">
         <div class="u-clearfix u-sheet u-sheet-1">
             <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text Element.</p>

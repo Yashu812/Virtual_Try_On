@@ -21,6 +21,7 @@
         </div>
     </header>
     <script src="{{ url_for('static', filename='js/home.js')}}"></script>
+    <!--
     <section class="product">
         <h2 class="product-category">best selling</h2>
 
@@ -126,22 +127,21 @@
             </div>
         </div>
     </section>
+    -->
+    <br>
 
     <!-- collections -->
     <section class="collection-container">
-        <a href="#" class="collection">
-            <img src="{{ url_for('static', filename='images/women-collection.png')}}" alt="">
+        <a href="/women" class="collection">
+            <img src="{{ url_for('static', filename='images/women-collection.jpg')}}" alt="">
             <p class="collection-title">women <br> apparels</p>
         </a>
-        <a href="#" class="collection">
-            <img src="{{ url_for('static', filename='images/men-collection.png')}}" alt="">
+        <a id="#men" href="/men1" class="collection">
+            <img src="{{ url_for('static', filename='images/card7.png')}}" alt="">
             <p class="collection-title">men <br> apparels</p>
         </a>
-        <a href="#" class="collection">
-            <img src="{{ url_for('static', filename='images/accessories-collection.png')}}" alt="">
-            <p class="collection-title">accessories</p>
-        </a>
     </section>
+    <br>
 
     <footer></footer>
 

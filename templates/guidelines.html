@@ -5,18 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guidelines Page</title>
 
+    <!--
+    - primary meta tag
+  -->
+    <title>Guidelines</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.svg')}}" type="image/svg+xml">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guidelines.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css')}}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css')}}">
+
+     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/jquery.js')}}" defer="">
+     </script>
+
+     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='js/nicepage.js')}}" defer="">
+     </script>
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image"
+        href="{{ url_for('static', filename='images/hero-banner.jpg')}}">
+
 </head>
 
-<body>
+<body id="top">
     <nav class="navbar"></nav>
     <script src="{{ url_for('static', filename='js/nav.js')}}"></script>
 
-    <footer></footer>
+    <main>
+        <article>
 
-    <script src="{{ url_for('static', filename='js/footer.js')}}"></script>
+            <!-- 
+        - #SERVICE
+      -->
+      <section class="section service" aria-label="service">
+                <div class="container">
+
+                    <img src="{{ url_for('static', filename='images/service-image.png')}}"
+                        width="122" height="136" loading="lazy" alt=""
+                        class="img">
+
+                    <h2 class="h2 section-title">
+                        <span class="span">Guidelines</span> when they need it.
+                    </h2>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="service-card">
+
+                                <figure class="card-icon">
+                                    <img src="{{ url_for('static', filename='images/service-icon-1.png')}}"
+                                        width="70" height="70" loading="lazy"
+                                        alt="service icon">
+                                </figure>
+
+                                <h3 class="h3 card-title">Step 1</h3>
+
+                                <p class="card-text">
+                                    Try Clothes Virtually by uploading image .
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <figure class="card-icon">
+                                    <img src="{{ url_for('static', filename='images/service-icon-2.png')}}"
+                                        width="70" height="70" loading="lazy"
+                                        alt="service icon">
+                                </figure>
+
+                                <h3 class="h3 card-title">Step 2</h3>
+
+                                <p class="card-text">
+                                    35% off your first order plus 5% off all future orders.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <figure class="card-icon">
+                                    <img src="{{ url_for('static', filename='images/service-icon-3.png')}}"
+                                        width="70" height="70" loading="lazy"
+                                        alt="service icon">
+                                </figure>
+
+                                <h3 class="h3 card-title">Step 3</h3>
+
+                                <p class="card-text">
+                                    25% off your online order of $50+. Available at most locations.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+
+                                <figure class="card-icon">
+                                    <img src="{{ url_for('static', filename='images/service-icon-4.png')}}"
+                                        width="70" height="70" loading="lazy"
+                                        alt="service icon">
+                                </figure>
+
+                                <h3 class="h3 card-title">Step 4</h3>
+
+                                <p class="card-text">
+                                    Shop online to get orders over $35 shipped fast and free.
+                                </p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-7ba5">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                    <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the Text
+                        Element.</p>
+                </div>
+            </footer>
+            <section class="u-backlink u-clearfix u-grey-80">
+                <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+                    <span>Website Templates</span>
+                </a>
+                <p class="u-text">
+                    <span>created with</span>
+                </p>
+                <a class="u-link" href="" target="_blank">
+                    <span>Website Builder Software</span>
+                </a>.
+            </section>
 </body>
 
 </html>
